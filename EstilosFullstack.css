@@ -1,0 +1,286 @@
+header {
+    background-color: #333333;
+    padding: 15px;
+  }
+  
+  .titulos {
+    background-color: #212417;
+    color: #ec9090;
+    padding: 10px;
+    text-align:center;
+    font-size: 20px;    
+  }
+  nav {
+    text-align: right;
+  }  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }  
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: rgb(59, 131, 240);
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /* Se realiza estilos al header, haciendo uso de un estilo normal para el h1, h2 y h3. Se aplica un display inline block para el nav; junto con un hover, al cual se le dio una transicion, logrando que cuando se pase el mouse este cambie de color y el texto salga subrayado*/
+
+  body {
+    background-color: #f0e68c;
+  }
+
+  /*le damos un color de fondo a todo el documento*/
+
+  main {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+  main h2 {
+    color:  #ec9090;
+    font-family: sans-serif;
+    text-align:center; 
+  }
+  main h4, p {
+    color: white;
+  }
+  main h5 {
+    color: blue;
+  }
+  main .fondo {
+    background-color: #111111;
+  }
+  main .caja1 {    
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  main .caja1 {
+    color: #0c0c0c;
+  }
+
+  main table {
+    table-layout: fixed;
+    width: 100%;
+    background-color: yellow;
+    border: 0.5px dotted;
+    border-bottom: 2px dotted red;
+  }
+  main figcaption {
+    color: white;
+    text-align: center;
+  }
+  
+ /* definimos el tipo de letra, tamaño, fondo para todo el documento*/
+
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .question i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+  
+  .answer {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .question.active i {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  /*creamos un listado de preguntas usando la propiedad faq-list, la cual podemos desplegar pasando el mouse*/ 
+  table, th, td{    
+    border: 0.5px dotted;
+    border-collapse: collapse;
+    color: black;
+    border: 0.5px dotted;
+    border-collapse: collapse;  
+  }
+  table, th {    
+    text-align: justify;
+    color: red;
+    font-size: 15px;
+    border: 1px dashed black;    
+  }
+  th {
+    text-align: center;
+    word-spacing: 300px;
+    font-style: italic; 
+    text-transform: uppercase;  
+  }
+  .Animación {
+    width: 100px; height: 100px; position: relative;       
+    background-color: red; animation-name: example; animation-duration: 2s;
+    animation-iteration-count: infinite;        
+  }        
+  @keyframes example {        
+  0%	{background-color: red; left:0px;}        
+  50% {background-color: yellow; left:200px;} 100% {background-color: red; left:0px;}
+  }
+  .segundaAnimación {
+      width: 100px;height: 100px; position: relative;
+      background-color: red; animation-name: otro; animation-duration: 4s;animation-iteration-count: infinite; animation-direction: alternate ;
+  }
+  @keyframes otro {
+  0%	{background-color: red; left:0px; top:0px;} 25% {background-color: blue; left:0px; top:100px;} 50% {background-color: green; left:100px; top:100px;} 75% {background-color: yellow; left:200px; top:0px;} 100% {background-color: red; left:0px; top:0px;}
+  }
+
+  form {
+    color: white;
+    text-align: center;   
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .C1, .C2 {
+    width: 400px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #161515;
+  }
+  
+  .C1 {
+    background-color: #1a3150;
+    
+  }
+  
+  .C2 {
+    background-color: #3a3535;
+    
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;  
+  }
+
+  figure figcaption {
+    font-style: italic;
+    color: #999;
+    margin-top: 5px;
+  }
+/*
+  .light-bulb {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  */
+  
+
+
+
+
+  
+  .light-bulb {
+    width: 100px;
+    height: 150px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+  }
+  
+  .light-bulb.on {
+    background-color: yellow;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+ 
+  
+
+  
+ 
+
+
+
+ 
+
+  
+
+    
+ 
+  
+  
+  
+
